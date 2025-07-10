@@ -1,0 +1,79 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(145deg, #e3f2fd, #fce4ec);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  .calculator {
+    background-color: #ffffff;
+    border-radius: 20px;
+    padding: 25px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+    width: 300px;
+  }
+  
+  #display {
+    width: 100%;
+    height: 60px;
+    font-size: 2rem;
+    text-align: right;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    background-color: #f0f0f0;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+  }
+  
+  button {
+    height: 55px;
+    font-size: 1.4rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 12px;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+  }
+  
+  /* Button colors */
+  button.number {
+    background-color: #64b5f6; /* blue */
+  }
+  button.number:hover {
+    background-color: #42a5f5;
+  }
+  
+  button.operator {
+    background-color: #ffb74d; /* orange */
+  }
+  button.operator:hover {
+    background-color: #ffa726;
+  }
+  
+  button.equal {
+    background-color: #81c784; /* green */
+    grid-column: span 4;
+  }
+  button.equal:hover {
+    background-color: #66bb6a;
+  }
+  
+  button.clear {
+    background-color: #e57373; /* red */
+  }
+  button.clear:hover {
+    background-color: #ef5350;
+  }
+  
+  
